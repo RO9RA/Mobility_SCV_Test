@@ -25,7 +25,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.example.mobility_scv'
-    mainClass = 'com.example.mobility_scv.HelloApplication'
+    mainClass = 'com.example.mobility_scv.MainActivity'
 }
 
 javafx {
@@ -33,11 +33,13 @@ javafx {
     modules = ['javafx.controls', 'javafx.fxml']
 }
 
-dependencies {
 
+dependencies {
+    implementation files("lib/jfoenix-9.0.10.jar")
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
+
 
 test {
     useJUnitPlatform()

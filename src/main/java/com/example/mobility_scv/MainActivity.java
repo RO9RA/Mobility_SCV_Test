@@ -14,8 +14,8 @@ public class MainActivity extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        //FXMLLoader fxmlLoader = new FXMLLoader(MainActivity.class.getResource("hello-view.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        //FXMLLoader fxmlLoader = new FXMLLoader(MainActivity.class.getResource("Side_Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Side_Menu.fxml"));
         Scene scene = new Scene(root, 480, 320);
         stage.setTitle("UI");
         stage.initStyle(StageStyle.UNDECORATED);

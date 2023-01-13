@@ -6,35 +6,35 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mobility_scv.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mobility_scv.Controller">
    <children>
       <AnchorPane prefHeight="46.0" prefWidth="200.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <ImageView fx:id="menu" fitHeight="40.0" fitWidth="32.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/burger.png" />
+                  <Image url="@../../../images/burger.png" />
                </image>
             </ImageView>
             <ImageView fx:id="exit" fitHeight="40.0" fitWidth="32.0" layoutX="440.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/exit.png" />
+                  <Image url="@../../../images/exit.png" />
                </image>
             </ImageView>
          </children></AnchorPane>
-      <AnchorPane layoutY="43.0" prefHeight="274.0" prefWidth="23.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="47.0">
+      <AnchorPane layoutY="43.0" prefHeight="272.0" prefWidth="23.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="47.0">
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="270.0" prefWidth="46.0" AnchorPane.topAnchor="0.0">
                <children>
                   <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/user.png" />
+                        <Image url="@../../../images/user.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></ImageView>
                   <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/data.png" />
+                        <Image url="@../../../images/data.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="15.0" />
@@ -44,33 +44,46 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@images/setting.png" />
+                        <Image url="@../../../images/setting.png" />
                      </image></ImageView>
                   <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets top="15.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@images/backup.png" />
+                        <Image url="@../../../images/backup.png" />
                      </image></ImageView>
                   <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
                         <Insets bottom="20.0" top="20.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@images/exit.png" />
+                        <Image url="@../../../images/exit.png" />
                      </image></ImageView>
                </children>
             </VBox>
          </children></AnchorPane>
+      <BorderPane fx:id="mainpane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+         <center>
+            <AnchorPane fx:id="usr" prefHeight="257.0" prefWidth="434.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="136.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test">
+                     <font>
+                        <Font size="76.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
       <AnchorPane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <AnchorPane layoutX="10.0" layoutY="53.0" prefHeight="274.0" prefWidth="23.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+      <AnchorPane layoutX="10.0" layoutY="53.0" prefHeight="272.0" prefWidth="23.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
          <children>
             <VBox alignment="TOP_CENTER" prefHeight="270.0" prefWidth="46.0" AnchorPane.topAnchor="0.0">
                <children>
                   <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/user.png" />
+                        <Image url="@../../../images/user.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="20.0" />
@@ -78,7 +91,7 @@
                   </ImageView>
                   <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/data.png" />
+                        <Image url="@../../../images/data.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="15.0" />
@@ -89,7 +102,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@images/setting.png" />
+                        <Image url="@../../../images/setting.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
@@ -97,7 +110,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@images/backup.png" />
+                        <Image url="@../../../images/backup.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
@@ -105,18 +118,18 @@
                         <Insets bottom="20.0" top="20.0" />
                      </VBox.margin>
                      <image>
-                        <Image url="@images/exit.png" />
+                        <Image url="@../../../images/exit.png" />
                      </image>
                   </ImageView>
                </children>
             </VBox>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="pane2" layoutX="54.0" layoutY="10.0" prefHeight="275.0" prefWidth="117.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0">
+      <AnchorPane fx:id="pane2" layoutX="54.0" layoutY="10.0" prefHeight="273.0" prefWidth="117.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0">
          <children>
             <VBox layoutY="1.0" prefHeight="275.0" prefWidth="118.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
                <children>
-                  <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="118.0" text="User">
+                  <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#click_usr" prefHeight="38.0" prefWidth="118.0" text="User">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin>
@@ -124,22 +137,22 @@
                         <Font size="15.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="118.0" text="Data">
+                  <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#click_data" prefHeight="38.0" prefWidth="118.0" text="Data">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="118.0" text="Setup">
+                  <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#click_setup" prefHeight="38.0" prefWidth="118.0" text="Setup">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="118.0" text="Export">
+                  <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#click_export" prefHeight="38.0" prefWidth="118.0" text="Export">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
                   </JFXButton>
-                  <JFXButton fx:id="test" alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="118.0" text="Return">
+                  <JFXButton fx:id="test" alignment="BASELINE_LEFT" onMouseClicked="#click_return" prefHeight="38.0" prefWidth="118.0" text="Return">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
